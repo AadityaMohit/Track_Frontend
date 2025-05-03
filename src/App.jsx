@@ -7,11 +7,13 @@ import TaskForm from './components/TaskForm';
 import ProtectedRoute from './components/utils/Protectedroutes';
 import Navbar from './components/Navbar';
  import React from 'react';
+import LandingPage from './components/pages/Landingpage';
 function App() {
   return (
     <Router>
     <Navbar/>
     <Routes>
+      <Route path="/" element={<LandingPage/>} />
       <Route path="/login" element={<Login/>} />
       <Route path="/register" element={<Register />} />
 
